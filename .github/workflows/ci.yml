@@ -32,4 +32,4 @@ jobs:
         access-key-secret: ${{ secrets.OSS_KEY_SECRET }}
     - name: Deply To OSS
       # 把代码复制对应的 oss Bucket 列表 github-actions-demo目录中
-      run: ossutil cp dist oss://github-actions-demo/ -rf
+      run: ossutil cp build oss://github-actions-demo/ -rf
